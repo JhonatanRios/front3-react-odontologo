@@ -6,6 +6,7 @@ body {
 }
 
 * {
+  position: relative;
   box-sizing: border-box;
   margin: 0;
 }
@@ -15,6 +16,7 @@ code {
 }
 .favButton {
   background-color: rgba(136, 136, 136, 0.1);
+  width: fit-content;
   border: none;
   cursor: pointer;
 }
@@ -24,9 +26,7 @@ h1 {
 }
 
 nav {
-  justify-content: flex-start;
   padding: 1rem;
-  top: 0;
 }
 
 a {
@@ -40,8 +40,8 @@ a:hover {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  margin: 15px 0 0;
   left: 0;
 }
 
@@ -56,7 +56,7 @@ form {
 
 .card-grid {
   gap: 1rem;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
 }

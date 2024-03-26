@@ -11,6 +11,9 @@
   &--10 {
     gap: 10px;
   }
+  &--15 {
+    gap: 15px;
+  }
 }
 
 .p {
@@ -19,36 +22,56 @@
   }
 }
 
-nav, footer {
-  position: sticky;
-  width: 100%;
-  background: #fff;
-}
-
-nav {
-  .btn-theme {
-    border: 0;
-    background: transparent;
+.cont {
+  &-nav {
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
+    nav {
+      .btn-theme {
+        border: 0;
+        background: transparent;
+      }
+    }
   }
 }
 
-main {
-  margin: 0 0 80px;
+.cont-nav, footer {
+  width: 100%;
 }
 
 .card {
   grid-template-rows: 1fr auto;
+  place-items: flex-start center;
   a {
     margin: 0;
   }
-  img {
-    width: min(178px, 100%);
+  .image {
+    img {
+      width: min(178px, 100%);
+    }
+    p {
+      position: absolute;
+      font-size: 15px;
+      line-height: 1;
+      top: 15px;
+      right: 15px;
+    }
   }
   h2 {
     font-size: 20px;
   }
   h3 {
     font-size: 16px;
+  }
+  .fa-heart {
+    color: #7c7c7c;
+    &.isFav {
+      color: #ff4040 !important;
+    }
   }
 }
 
@@ -73,11 +96,17 @@ footer {
 
 .dark {
   background-color: rgba(18, 18, 18, 0.5);
-  color: white;
+  color: #fff;
   a {
-    color: white;
+    color: #fff;
   }
-  nav, footer {
+  .cont-nav {
     background-color: rgba(18, 18, 18, 0.5);
+  }
+  .card {
+    border: 0.5px solid #fff;
+    .fa-heart {
+      color: #c8c8c8;
+    }
   }
 }

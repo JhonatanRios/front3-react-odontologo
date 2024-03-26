@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from "react"
 
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
@@ -9,7 +8,7 @@ const Form = () => {
       <form>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

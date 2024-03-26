@@ -1,10 +1,10 @@
 import React from 'react'
-
-
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
+import { useContextGlobal } from '../Contexts/global.context';
 
 const Detail = () => {
- 
+  const { state } = useContextGlobal()
+  console.log(state);
+  console.log(state.dentistSelect);
   // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
 
   return (

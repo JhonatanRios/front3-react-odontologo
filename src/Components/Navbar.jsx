@@ -6,11 +6,12 @@ const Navbar = () => {
   const { state, toggleTheme } = useContext(ContextGlobal)
 
   const handleToggleTheme = () => {
-    toggleTheme();
-  };
+    toggleTheme()
+  }
 
   return (
-    <div>
+    <div className='d-flex cont-nav'>
+      <Link to='/'><p className='p--10'><strong>DH</strong> Odonto</p></Link>
       <nav className='d-flex g--10 p--10'>
         <Link to='/'><h4>Home</h4></Link>
         <Link to='/favs'><h4>Favoritos</h4></Link>
