@@ -7,7 +7,7 @@ export const ContextGlobal = createContext()
 export const initialState = {
   theme: localStorage.getItem('theme') || "",
   data: [],
-  dataSelect: {},
+  dentistSelected: {},
   favs: JSON.parse(localStorage.getItem('favs')) || []
 }
 

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useContextGlobal } from "../Contexts/global.context"
 
@@ -6,10 +6,11 @@ import { useContextGlobal } from "../Contexts/global.context"
 const Card = ({ item }) => {
   const { name, username, id } = item
   const { state, dispatch } = useContextGlobal()
-  const isFav = state.favs.some(fav => fav.id === item.id)
+  const [ isFav, setIsFav ] = useState(state.favs.some(fav => fav.id === item.id))
 
   const handleAddFav = () => {
-    isFav ? dispatch({ type: 'DELETE_FAV', payload: item.id }) : dispatch({ type: 'ADD_FAV', payload: item });
+    setIsFav(!isFav)
+    isFav ? dispatch({ type: 'DELETE_FAV', payload: item.id }) : dispatch({ type: 'ADD_FAV', payload: item })
   }
 
   return (
