@@ -25,10 +25,6 @@ h1 {
   text-align: center;
 }
 
-nav {
-  padding: 1rem;
-}
-
 a {
   color: #000;
   text-decoration: none;
@@ -47,11 +43,9 @@ footer {
 }
 
 form {
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 300px;
-  height: 100px;
+  width: min(500px, 100%);
   margin: 0 auto;
 }
 

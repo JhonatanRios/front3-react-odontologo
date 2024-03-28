@@ -15,7 +15,7 @@ const Card = ({ item }) => {
 
   return (
     <div className="d-grid card g--10 p--10">
-      <Link to={'/dentista/' + item.id}>
+      <Link to={'/dentist/' + item.id}>
         <div className="image">
           <img src="./images/doctor.jpg" alt={name} title={name} width='178' height='178' />
           <p>{id}</p>

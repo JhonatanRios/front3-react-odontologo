@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { useContextGlobal } from '../Contexts/global.context';
-import { Link, useParams } from 'react-router-dom';
-import axios from 'axios';
+import { useContextGlobal } from '../Contexts/global.context'
+import { Link, useParams } from 'react-router-dom'
+import axios from 'axios'
 
 const Detail = () => {
   const params = useParams()
@@ -18,7 +18,7 @@ const Detail = () => {
 
     axios(url)
       .then(res => {
-        dispatch({ type: 'GET_DENTIST', payload: res.data });
+        dispatch({ type: 'GET_DENTIST', payload: res.data })
         checkIsFav()
       })
       .catch(error => console.error('Error fetching dentist data:', error))

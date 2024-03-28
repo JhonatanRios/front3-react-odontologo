@@ -13,12 +13,14 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Routes>
-        <Route path={routes.home} element={<Home/>}/>
-        <Route path={routes.detail} element={<Detail/>}/>
-        <Route path={routes.favs} element={<Favs/>}/>
-        <Route path={routes.contact} element={<Contact/>}/>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path={routes.home} element={<Home/>}/>
+          <Route path={routes.detail} element={<Detail/>}/>
+          <Route path={routes.favs} element={<Favs/>}/>
+          <Route path={routes.contact} element={<Contact/>}/>
+        </Routes>
+      </main>
       <Footer />
     </>
   )
