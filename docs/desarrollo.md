@@ -9,7 +9,7 @@
 ## Iniciando la App
 Instalamos las dependencias: `npm install`
 
-Podemos iniciar nuestra aplicación con el comando: `npm dev`
+Podemos iniciar nuestra aplicación con el comando: `npm run dev`
 
 
 ## Dependencias
